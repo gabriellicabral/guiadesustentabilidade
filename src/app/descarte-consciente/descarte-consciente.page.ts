@@ -4,14 +4,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-descarte-consciente',
   standalone: true,
   imports: [
     IonicModule,
     CommonModule,
     RouterModule
   ],
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  templateUrl: './descarte-consciente.page.html',
+  styleUrls: ['./descarte-consciente.page.scss'],
 })
-export class HomePage {}
+export class DescarteConscientePage {}

@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-objetivo',
   standalone: true,
   imports: [
     IonicModule,
     CommonModule,
-    RouterOutlet
+    RouterModule
   ],
-  templateUrl: 'app.component.html',
+  templateUrl: './objetivo.page.html',
+  styleUrls: ['./objetivo.page.scss'],
 })
-export class AppComponent {}
+export class ObjetivoPage {}

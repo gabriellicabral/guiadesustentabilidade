@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-coleta-seletiva',
   standalone: true,
   imports: [
     IonicModule,
     CommonModule,
-    RouterOutlet
+    RouterModule
   ],
-  templateUrl: 'app.component.html',
+  templateUrl: './coleta-seletiva.page.html',
+  styleUrls: ['./coleta-seletiva.page.scss'],
 })
-export class AppComponent {}
+export class ColetaSeletivaPage {}

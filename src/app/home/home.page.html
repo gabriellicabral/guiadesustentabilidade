@@ -1,20 +1,76 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+<!-- src/app/home/home.page.html -->
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Guia de Sustentabilidade</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" size-md="6" class="ion-padding">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Apresentação do projeto</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Visão geral do objetivo, público-alvo e abordagem com conteúdo estático.
+          </ion-card-content>
+<ion-card-content>
+  <ion-button expand="block" routerLink="/apresentacao">
+    Ver mais
+  </ion-button>
+</ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6" class="ion-padding">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Objetivo social</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Conheça o objetivo social: conscientizar sobre a separação de resíduos.
+          </ion-card-content>
+          <ion-card-content>
+            <ion-button expand="block" routerLink="/objetivo">
+              Ver objetivo
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6" class="ion-padding">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Coleta Seletiva</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Guia rápido de como realizar a coleta seletiva em casa.
+          </ion-card-content>
+          <ion-card-content>
+  <ion-button expand="block" routerLink="/coleta-seletiva">
+    Ver mais
+  </ion-button>
+</ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-md="6" class="ion-padding">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Descarte Consciente</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Dicas de descarte responsável e práticas do dia a dia.
+          </ion-card-content>
+              <ion-button expand="block" routerLink="/descarte-consciente">
+      Ver mais
+    </ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
