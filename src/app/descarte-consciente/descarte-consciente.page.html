@@ -1,36 +1,77 @@
 <!-- src/app/descarte-consciente/descarte-consciente.page.html -->
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="success"> 
     <ion-title>Descarte Consciente</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
+  
+  <!-- Seção de Ações Práticas -->
+  <ion-text color="primary">
+    <h2 class="ion-padding-start">Como começar?</h2>
+  </ion-text>
+
   <ion-card>
-    <ion-card-header>
-      <ion-card-title>Dicas práticas</ion-card-title>
-    </ion-card-header>
     <ion-card-content>
-      <ion-list>
-        <ion-item>Separe corretamente os resíduos ao chegar em casa.</ion-item>
-        <ion-item>Leve itens recicláveis aos pontos de coleta próximos.</ion-item>
-        <ion-item>Evite desperdício, reutilize quando possível.</ion-item>
+      <ion-list lines="none">
+        <ion-item>
+          <ion-icon name="trash-bin-outline" slot="start" color="primary"></ion-icon>
+          <ion-label class="ion-text-wrap">
+            <strong>Separação:</strong> Organize os resíduos assim que chegar em casa.
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="location-outline" slot="start" color="primary"></ion-icon>
+          <ion-label class="ion-text-wrap">
+            <strong>Entrega:</strong> Utilize os pontos de coleta do seu bairro.
+          </ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name="refresh-outline" slot="start" color="primary"></ion-icon>
+          <ion-label class="ion-text-wrap">
+            <strong>Reuso:</strong> Antes de descartar, pense: isso pode ser reaproveitado?
+          </ion-label>
+        </ion-item>
       </ion-list>
     </ion-card-content>
   </ion-card>
 
+  <!-- Seção de Conhecimento e Impacto -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Conteúdo educativo</ion-card-title>
+      <ion-card-subtitle>Por que isso importa?</ion-card-subtitle>
     </ion-card-header>
+    
     <ion-card-content>
-      <ul>
-        <li>Impacto ambiental da correta segregação.</li>
-        <li>Rotas de descarte consciente na comunidade.</li>
-        <li>Benefícios de reduzir resíduos enviados a aterros.</li>
-      </ul>
+      <div class="ion-margin-bottom">
+        <ion-text color="dark">
+          <p>
+            <ion-icon name="leaf-outline" color="success" class="icon" ></ion-icon>
+            A segregação evita a contaminação de materiais recicláveis.
+          </p>
+        </ion-text>
+      </div>
+
+      <div>
+        <ion-text color="dark">
+          <p style="display: flex; align-items: center;">
+            <ion-icon name="map-outline" color="success" class="icon"></ion-icon>
+            Conhecer as rotas locais otimiza a logística de reciclagem.
+          </p>
+        </ion-text>
+      </div>
     </ion-card-content>
   </ion-card>
 
-  <ion-button expand="block" routerLink= '' >Voltar à home</ion-button>
+  <!-- Navegação Corrigida -->
+  <div class="ion-padding-top">
+    <ion-button expand="block" fill="outline" routerLink='' routerDirection="back">
+      <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+      Voltar ao Início
+    </ion-button>
+  </div>
+
 </ion-content>

@@ -1,32 +1,66 @@
 <!-- src/app/objetivo/objetivo.page.html -->
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Objetivo social</ion-title>
+  <ion-toolbar color="tertiary"> <!-- Uma cor diferente para destacar o propósito social -->
+    <ion-title>Objetivo Social</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <ion-card>
+  
+  <!-- Missão Principal -->
+  <ion-card class="ion-no-margin ion-margin-bottom" style="border-left: 6px solid var(--ion-color-tertiary);">
     <ion-card-header>
-      <ion-card-title>Objetivo geral</ion-card-title>
+      <ion-card-subtitle>Nossa Missão</ion-card-subtitle>
+      <ion-card-title>Objetivo Geral</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      Conscientizar a comunidade local sobre a importância da correta separação e destinação dos resíduos, incentivando hábitos mais sustentáveis no cotidiano.
+      <ion-text color="dark">
+        Conscientizar a comunidade local sobre a importância da correta separação e destinação dos resíduos, transformando pequenos hábitos em grandes mudanças para o nosso ecossistema.
+      </ion-text>
     </ion-card-content>
   </ion-card>
 
+  <ion-text color="dark">
+    <h2 class="ion-padding-start">Metas do Projeto</h2>
+  </ion-text>
+
+  <!-- Pilares Específicos -->
   <ion-card>
-    <ion-card-header>
-      <ion-card-title>Objetivos específicos</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ul>
-        <li>Estimular a adoção de práticas sustentáveis no dia a dia da população.</li>
-        <li>Fornecer orientações simples, claras e acessíveis sobre o descarte responsável de resíduos.</li>
-        <li>Promover a educação ambiental por meio de conteúdo estático, organizado e de fácil compreensão..</li>
-      </ul>
-    </ion-card-content>
+    <ion-list lines="full">
+      
+      <ion-item>
+        <ion-icon name="people-circle-outline" slot="start" color="tertiary"></ion-icon>
+        <ion-label class="ion-text-wrap">
+          <h3><strong>Engajamento Local</strong></h3>
+          <p>Estimular a adoção de práticas sustentáveis no dia a dia de cada cidadão.</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="book-outline" slot="start" color="tertiary"></ion-icon>
+        <ion-label class="ion-text-wrap">
+          <h3><strong>Educação Prática</strong></h3>
+          <p>Fornecer orientações simples, claras e acessíveis para facilitar o descarte responsável.</p>
+        </ion-label>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="accessibility-outline" slot="start" color="tertiary"></ion-icon>
+        <ion-label class="ion-text-wrap">
+          <h3><strong>Inclusão e Acesso</strong></h3>
+          <p>Promover a educação ambiental com conteúdos organizados e de fácil compreensão para todos.</p>
+        </ion-label>
+      </ion-item>
+
+    </ion-list>
   </ion-card>
 
-  <ion-button expand="block" routerLink=''>Voltar à home</ion-button>
+  <!-- Navegação Final -->
+  <div class="ion-padding-top">
+    <ion-button expand="block" fill="clear" color="tertiary" routerLink='' routerDirection="back">
+      <ion-icon name="home-outline" slot="start"></ion-icon>
+      Retornar ao Menu Principal
+    </ion-button>
+  </div>
+
 </ion-content>

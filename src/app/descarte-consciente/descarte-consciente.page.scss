@@ -1,4 +1,21 @@
-/* src/app/descarte-consciente/descarte-consciente.page.scss */
-ion-card {
-  margin-bottom: 12px;
+.action-list ion-item {
+  --padding-start: 8px;
+}
+
+.impact-content {
+  .info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    ion-icon {
+      font-size: 24px;
+      margin-right: 12px;
+    }
+  }
+}
+
+.icon{
+ margin-right: 12px; 
+ font-size: 24px;
 }

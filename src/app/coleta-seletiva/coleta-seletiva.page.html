@@ -1,32 +1,65 @@
 <!-- src/app/coleta-seletiva/coleta-seletiva.page.html -->
 <ion-header>
-  <ion-toolbar color="primary">
+  <ion-toolbar color="secondary">
     <ion-title>Coleta Seletiva</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
+  
+  <!-- Introdução com Destaque -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Explicação simples</ion-card-title>
+      <ion-icon name="bulb-outline" class="icon1"></ion-icon>
+      <ion-card-title>Por que separar?</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      A separação correta de resíduos facilita a reciclagem e reduz danos ao meio ambiente.
-    </ion-card-content>
-    </ion-card>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Conteúdo educativo</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-list>
-        <ion-item>Resíduos recicláveis: papel, plástico, vidro e metal devem ser limpos e separados corretamente para reciclagem.</ion-item>
-        <ion-item>Resíduos orgânicos: restos de alimentos e materiais biodegradáveis podem ser destinados à compostagem ou ao lixo orgânico.</ion-item>
-        <ion-item>Resíduos perigosos: pilhas, baterias, eletrônicos, lâmpadas e produtos químicos precisam de descarte específico em pontos de coleta adequados.</ion-item>
-      </ion-list>
+      A separação correta de resíduos é o primeiro passo para a reciclagem. Ela evita a contaminação de materiais e reduz drasticamente o lixo nos aterros.
     </ion-card-content>
   </ion-card>
 
-  <ion-button expand="block" routerLink=''>Voltar à home</ion-button>
+  <ion-text color="dark">
+    <h2 class="ion-padding-start">Guia de Separação</h2>
+  </ion-text>
+
+  <!-- Lista Educativa com Cores de Referência -->
+  <ion-list lines="inset">
+    
+    <!-- Recicláveis -->
+    <ion-item>
+      <ion-icon name="sync-circle" slot="start" class="icon2"></ion-icon>
+      <ion-label class="ion-text-wrap">
+        <h3><strong>Recicláveis (Papel, Plástico, Vidro, Metal)</strong></h3>
+        <p>Devem estar limpos e secos. A limpeza evita o mau cheiro e a perda do material.</p>
+      </ion-label>
+    </ion-item>
+
+    <!-- Orgânicos -->
+    <ion-item>
+      <ion-icon name="leaf-outline" slot="start" class="icon3"></ion-icon>
+      <ion-label class="ion-text-wrap">
+        <h3><strong>Orgânicos</strong></h3>
+        <p>Restos de alimentos. Ideal para compostagem, transformando-se em adubo para plantas.</p>
+      </ion-label>
+    </ion-item>
+
+    <!-- Perigosos -->
+    <ion-item>
+      <ion-icon name="alert-triangle-outline" slot="start" class="icon4"></ion-icon>
+      <ion-label class="ion-text-wrap">
+        <h3><strong>Resíduos Perigosos</strong></h3>
+        <p>Pilhas, baterias e eletrônicos. <strong>Atenção:</strong> Nunca jogue no lixo comum!</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <!-- Espaçador para o botão não ficar colado na lista -->
+  <div class="ion-margin-top">
+    <ion-button expand="block" fill="solid" color="medium" routerLink= '' routerDirection="back">
+      <ion-icon name="chevron-back-outline" slot="start"></ion-icon>
+      Voltar para o Início
+    </ion-button>
+  </div>
+
 </ion-content>

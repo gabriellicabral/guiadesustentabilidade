@@ -1,4 +1,13 @@
-/* src/app/objetivo/objetivo.page.scss */
-ion-card {
-  margin-bottom: 12px;
+.mission-card {
+  margin: 0 0 16px 0;
+  border-left: 6px solid var(--ion-color-tertiary);
+}
+
+.goals-list {
+  background: transparent;
+  margin-top: 10px;
+}
+
+.home-btn {
+  margin-top: 20px;
 }
