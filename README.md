@@ -10,7 +10,7 @@ O app foi construído utilizando Angular e Ionic, garantindo uma interface moder
 - **Descarte Consciente:** Dicas práticas para o descarte responsável no cotidiano.
 
 ### 🎯 Objetivo do projeto
-O objetivo deste projeto é oferecer uma interface minimalista e de rápida navegação para educar a comunidade sobre práticas sustentáveis. 
+Este projeto cumpre um papel extensionista ao traduzir conceitos técnicos de gestão de resíduos em uma linguagem acessível para o cidadão comum. Ao facilitar o acesso à informação sobre coleta seletiva local, o aplicativo atua diretamente na conscientização ambiental da comunidade, reduzindo o descarte irregular de materiais e promovendo a economia circular no bairro. É uma ferramenta de utilidade pública que empodera o usuário a ser um agente ativo na preservação do meio ambiente local.
 
 ### 🛠️ Tecnologias Utilizadas
 
