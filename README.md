@@ -59,4 +59,8 @@ O desenvolvimento deste projeto foi acompanhado através do Git para garantir o 
 
 `git commit`: "Mensagem objetiva"`: Registro das alterações realizadas.
 
+<<<<<<< HEAD
 `git push`: Envio das atualizações para o repositório remoto no GitHub.
+=======
+`git push`: Envio das atualizações para o repositório remoto no GitHub.
+>>>>>>> 9795bae895c85425b0f613ba777110f5dce8d4e9
